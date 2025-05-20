@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: flask-node-port-svc
+  name: flask-lb-svc
 spec:
   type: LoadBalancer
   selector:
-    app: flaskdemo
+  app: flaskdemo
   ports:
   — port: 80
-    targetPort: 5000
+  targetPort: 5000
