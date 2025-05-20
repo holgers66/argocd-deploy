@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: ghcr.io/holgers66/argocd-docker:main@sha256:15875c9a13d13314a84f7ecaf6c95eb58983acc8a36b0bd9764e5d5f1df58d31
+      - image: ghcr.io/holgers66/argocd-docker:main@sha256:43880bf9fd1dadd778358d3f1de57bea121240418bf82a473353782df1503d76
         name: flaskdemo
         resources: {}
 status: {}
