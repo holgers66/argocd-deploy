@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: flask-lb-svc
 spec:
-  type: LoadBalancer
   selector:
-    app.kubernetes.io/name: flaskdemo
+    app: flaskdemo
   ports:
-   — protocol: TCP
-     port: 80
-     targetPort: 5000
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: LoadBalancer
